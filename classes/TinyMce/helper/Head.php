@@ -110,7 +110,7 @@ class TinyMce_HeadHelper extends App_ViewHelper_Abstract
     public function Head()
     {
 	$this->getView()->broker()->headScript()->append(
-            $this->getView()->staticpath() . 'tinymce/tiny_mce.js' );
+            $this->getView()->staticpath() . 'tinymce/tiny_mce.js', 'jquery' );
         return $this;
     }
 
